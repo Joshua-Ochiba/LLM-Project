@@ -1,12 +1,22 @@
 import './Main.css'
 import { assets } from '../../assets/assets'
 
-const Main = () => {
+
+const Main = ({ darkMode, toggleTheme }) => {
+
+
   return (
     <div className='main'>
       <div className='nav'>
         <p>ChatBot</p>
-        <img src={assets.user_icon} alt="User profile" />
+        <div className="nav-right">
+
+          <button className="theme-toggle" onClick={toggleTheme}>
+            {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+          </button>
+
+          <img src={assets.user_icon} alt="User profile" />
+        </div>
       </div>
 
       <div>

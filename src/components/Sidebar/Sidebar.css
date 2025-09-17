@@ -1,3 +1,4 @@
+
 .sidebar{
     min-height: 100%;
     display: inline-flex;
@@ -5,11 +6,17 @@
     justify-content: space-between;
     background-color: #f0f4f9;
     padding: 25px 15px;
+    
 }
 
 
-.sidebar img{
-    width: 20px;
+.sidebar img {
+  width: 20px;
+  transition: filter 0.3s ease;
+}
+
+.dark-theme .sidebar img {
+  filter: brightness(0) invert(1);
 }
 
 .sidebar .menu{
@@ -24,7 +31,7 @@
     align-items: center;
     gap: 10px;
     padding: 10px 15px;
-    background-color: #e6eaf1;
+    background-color: var(--card-bg);
     border-radius: 50px;
     font-size: 14px;
     color: grey;
@@ -48,7 +55,7 @@
     padding: 10px;
     padding-right: 40px;
     border-radius: 50px;
-    color: #282828;
+    color: var(--text-color);
     cursor: pointer;
 }
 
