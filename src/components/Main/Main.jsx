@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './Main.css'
 import {assets} from '../../assets/assets'
 
@@ -13,7 +13,7 @@ const Main = () => {
         <div>
             <div className='main-container'>
                 <div className='greet'>
-                    <img src={assets.logo} alt=''/>
+                    <img src={assets.logo} alt='image logo'/>
                     <p><span>Hello, User.</span></p>
                     <p>What can I asist you with?</p>
                     <p className='greet-bottom'>Choose a prompt below or write your own to start chatting</p>

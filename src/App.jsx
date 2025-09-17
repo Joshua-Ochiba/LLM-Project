@@ -1,6 +1,4 @@
-import React from 'react'
-import Sidebar from './components/Sidebar/Sidebar'
-import Main from './components/Main/Main'
+
 import Login from './components/Login/Login'
 import { ContentPage } from './pages/ContentPage'
 import { BrowserRouter } from 'react-router-dom';
